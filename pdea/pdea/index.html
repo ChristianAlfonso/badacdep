@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDEA</title>
+    <link rel="shortcut icon" href="/img/pdea-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+</head>
+
+<style>
+
+   
+
+    body {
+        min-width: 608px;
+    }
+
+.nav-label {
+  display: none;
+}
+   
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 50%; 
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    color: white;
+    font-size: 1.5rem; 
+}
+
+.col-header img {
+  transition: transform 0.3s ease;
+}
+
+.col-header img:hover {
+  transform: scale(1.1); 
+}
+
+@media (max-width: 768px) {
+  .nav-label {
+    display: inline;
+  }
+}
+
+
+
+
+</style>
+
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light p-3">
+    <div class="container-fluid justify-content-center main-header">
+        <div class="navbar-brand">
+                <a href="/html/index.html">
+                    <img src="/img/pdea-header.png" class="img-fluid"  alt="pdea-logo" style="width: 30rem;"
+                         class="brand-logo"></a> 
+        </div>
+            
+            <button type="button" 
+                    class="navbar-toggler" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navCollapse">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div class="container collapse navbar-collapse justify-content-end navigation-parent" id="navCollapse">
+                <ul class="navbar-nav nav nav-tabs" 
+                    role="tablist" 
+                    style="font-weight: bold;">
+                        <li class="nav-item">
+                           <a href="#home" 
+                              class="nav-link active" 
+                              data-bs-toggle="tab" 
+                              style="padding: 1rem 2rem 0rem 2rem;"> <i class="fa-solid fa-house"></i> <span class="nav-label">Home</span> </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#about" 
+                             class="nav-link"
+                             data-bs-toggle="tab" 
+                             style="padding: 1rem 2rem 0rem 2rem;"><i class="fa-solid fa-pager"></i> <span class="nav-label">Contents</span></a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#notification" 
+                              class="nav-link" 
+                              data-bs-toggle="tab"
+                               style="padding: 1rem 2rem 0rem 2rem;"> <i class="fa-solid fa-envelope"></i><span class="nav-label">Notification</span></a>
+                        </li>
+                </ul>
+                </div>    
+    </div>    
+</nav>
+
+<div class="tab-content" style="height: auto;">
+
+  <div class="container-fluid tab-pane active mb-5" id="home">
+      <div id="demo" 
+           class="carousel slide mt-3" 
+           data-bs-ride="carousel">
+
+          <div class="carousel-indicators">
+              <button type="button" 
+                      data-bs-target="#demo" 
+                      data-bs-slide-to="0" 
+                      class="active"></button>
+
+              <button type="button" 
+                      data-bs-target="#demo" 
+                      data-bs-slide-to="1"></button>
+
+              <button type="button" 
+                      data-bs-target="#demo"
+                       data-bs-slide-to="2"></button>
+          </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/img/carousel-one.jpg" 
+             alt="slide1" 
+             class="d-block" 
+             style="width:100%; aspect-ratio: 4/1; ">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/carousel-two.jpg" 
+             alt="slide2" 
+             class="d-block" 
+             style="width:100%; aspect-ratio: 4/1;">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/carousel-three.jpg" 
+             alt="slide3" 
+             class="d-block" 
+             style="width:100%; aspect-ratio: 4/1;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" 
+            type="button" 
+            data-bs-target="#demo" 
+            data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" 
+            type="button" 
+            data-bs-target="#demo" 
+            data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+      </div> 
+      <div class="container-fluid row justify-content-evenly align-items-center p-2 ms-0 mt-2" style="gap: 2rem;">
+    <div class="col-sm-12 col-md-3 border p-3" height: auto;">
+      <div class="col-header">
+        <img src="/img/pdea-news-1.jpg" alt="" 
+             class="img-fluid" 
+             style="width: 100%; aspect-ratio: 3/2;">
+      </div>
+      <div class="col-body mt-2">
+        Philippine Drug Enforcement Agency (PDEA)
+        U.S. Conducts Specialized Trainings for Philippine Law Enforcement Agencies
+        <button class="btn btn-success mt-2 float-end">Read More</button>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 border p-3" height: auto;">
+      <div class="col-header">
+        <img src="/img/pdea-news-2.jpg" alt="" 
+             class="img-fluid" 
+             style="width: 100%; aspect-ratio: 3/2;">
+      </div>
+      <div class="col-body mt-2">
+        Philippine Drug Enforcement Agency (PDEA)
+        U.S. Conducts Specialized Trainings for Philippine Law Enforcement Agencies
+        <button class="btn btn-success mt-2 float-end">Read More</button>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 border p-3" height: auto;">
+      <div class="col-header">
+        <img src="/img/pdea-news-3.jpg" alt="" 
+             class="img-fluid" 
+             style="width: 100%; aspect-ratio: 3/2;">
+       </div>     
+      <div class="col-body mt-2">
+        Philippine Drug Enforcement Agency (PDEA)
+        U.S. Conducts Specialized Trainings for Philippine Law Enforcement Agencies
+        <button class="btn btn-success mt-2 float-end">Read More</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container tab-pane fade mt-3 p-2 border" id="about" style="height: auto;">
+      <div class="container-context">
+        <strong class="text-success h5">FACTORS CONTRIBUTING TO THE DRUG COURIER PROBLEM </strong><br> <br>
+
+           Filipinos are usually enticed by the offer because of the syndicates’ promise of love/marriage, as have been recorded in several arrests involving Filipina drug couriers.    Others are lured by the opportunity to travel and the promise of a comfortable life while others want a high-paying job and easy money.
+           <br><br>
+            The drug courier problem can also be attributed to the following factors:
+<br><br>
+The prevalence of poverty
+Poor educational background
+Easy money
+Unemployment
+The idea of traveling
+MODUS OPERANDI
+<br><br>
+Couriers are usually recruited by casual acquaintances they meet in key cities here or abroad, mostly fellow Filipinos connected to drug syndicates like the African Drug Syndicate (ADS), offering plane tickets, hotel accommodation and huge amounts of money. In some instances, members of syndicates befriend/marry potential recruit then later turn him/her into a courier or cohort. On the other hand, unwitting victims were duped by acquaintances into carrying packages in exchange for money, not knowing that drugs were placed inside.
+<br><br>
+Opium Poppy – Couriers may also be recruited through the internet and social networking sites like Facebook, MySpace, Tagged, etc. Syndicates also engage in travel & tours businesses/agencies to arrange airline and hotel bookings of the couriers and use fraudulent documents/fake credit cards.
+<br><br>
+The ADS is believed to be behind the alarming increase of Filipino drug couriers arrested abroad. They deliver drugs to their connections in different points around the world by employing drug couriers to prevent the risk of getting caught themselves. They also use Filipinos as cohorts to recruit fellow OFWs.
+<br><br>
+The ADS is an international syndicate involved in drug trafficking and cyber crimes. They use stolen and/or falsified documents to go about with their transaction (i.e. purchase of plane tickets, hotel bookings) and usually communicate with their cohorts thru phone or the internet. Members are proficient in English and well-versed, very persistent and are generally friendly which makes them recruit potential victims easily.
+<br><br>
+When arrested, the punishment given to arrested drug couriers may vary from repatriation, imprisonment (ranging from 6 months to lifetime imprisonment), payment of fine, confiscation of personal belongings, and/or death penalty.
+<br><br>
+      <strong class="text-success h5">THE TASK FORCE DRUG COURIER    </strong>
+
+<br><br>
+The Task Force Drug Couriers (TFDC) was created on February 08, 2010 by virtue of Administrative Order No. 279. It is an inter-agency team tasked in the deterrence, prevention and protection of Filipinos from being victimized as drug couriers by international drug trafficking syndicates. The Task Force is composed of 13 agencies, chaired by the Philippine Drug Enforcement Agency and co-chaired by the Department of Foreign Affairs with the following agencies as members:
+<br><br>
+Bureau of Customs
+Bureau of Immigration
+Commission on Higher Education
+Department of Justice
+Department of Labor and Employment
+Manila International Airport Authority
+National Bureau of Investigation
+Philippine Information Agency
+Philippine National Police – Aviation Security Group
+Tourism Infrastructure and Enterprise Zone Authority (formerly Philippine Tourism Authority)
+Office of the President thru the Office of the Executive Secretary
+<br><br>
+To address the problem, the Task Force prepared the TFDC 3-year Action Plan composed of 19 doables and focused on the key areas of Prevention, Law Enforcement and Prosecution, and Coordination.
+<br><br>
+Since its creation, the TFDC has done several accomplishments which includes the conduct of international operations leading to the arrest of members of the ADS, seizure of millions-worth of dangerous drugs and rescue of Filipinas who were utilized as drug couriers. It also developed and distributed posters and IEC materials in strategic areas nationwide as part of the information dissemination and conducted lectures/seminars on the issue.
+<br><br>
+However, execution of some of the plans and programs has been hampered due to the large amounts needed to fund international operations. The Task Force is currently increasing its efforts by tapping key sectors and coordinating with different institutions to support the full implementation of said action plan.
+<br><br>
+       <strong class="text-success h5">HOW TO AVOID BEING A DRUG COURIER</strong>
+
+ <br><br>
+Avoid bringing other people’s luggage/packages especially when you do not know what is contained inside. Do not trust anybody, even acquaintances, when you are traveling abroad. Big amount of money is not worth it.
+Be vigilant on people offering easy money and work abroad especially when you are unsure of the nature of the job.
+Check if your recruiter’s/recruitment agency’s papers and documents underwent the proper process.
+WHAT TO DO AND WHERE TO SEEK HELP WHEN RECRUITED AS DRUG COURIER
+<br><br>
+In the country, victims can seek help and report illegal drug activities to authorities like PDEA, PNP or NBI
+For Filipinos abroad, they can go to the Philippine Embassy in the country where they are staying
+CHALLENGES FACED BY THE GOVERNMENT AND HOW TO SOLVE THE PROBLEM
+<br><br>
+The underlying poverty crisis has lured Filipinos to take jobs with high salaries despite the harm/consequences that it may bring just to provide for themselves and their families. Because of this, drug trafficking syndicates target Filipinos, usually OFWs, as drug couriers in exchange for a huge amount of money, taking advantage of the situation.
+<br><br>
+Syndicates like the ADS are well-organized, well-funded and continue to expand. The drug courier problem’ global scope due to the syndicates’ vast connections and mobility makes it hard for law enforcement agencies to trace and apprehend members and cohorts.
+<br><br>
+In order to address this problem, concerned agencies and key sectors need to intensify its anti-drug courier campaign through the production of IEC materials, publicity/media plan development, and conduct of lectures/seminars. Filipinos need to be aware and at the same time take a proactive stance in sharing to others what they know about the issue.
+<br><br>
+Considering that other countries especially China and Saudi Arabia impose very strict punishments to persons with drug-related cases, information dissemination as a preventive measure is better than having to provide legal and financial support to already arrested drug couriers which in the end may prove futile once offender is proven guilty.
+<br><br>
+The government also needs to have an active and strong cooperation with foreign counterparts. Strengthening of bilateral, regional and multilateral coordination is crucial in the conduct international operations, profiling and development of a comprehensive database on syndicates, and monitoring of cases. Embassies and consulates should undertake tighter screening of visa applications of nationals who are known to be involved in drug smuggling activities and immigration officials should closely monitor track down activities of these aliens. This could only be achieved if concerned agencies have sufficient administrative and financial support.
+      </div>
+  </div>
+     
+   
+  
+  <div class="container-fluid tab-pane fade" id="notification" style="height: 100vh;">
+    <table class="table table-striped table-bordered table-responsive mt-3">
+      <thead class="bg-secondary text-white">
+        <tr>
+          <th>Barangay</th>
+          <th>Status</th>
+          <th>Inbox</th>
+          <th>File Upload</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sta. Lucia</td>
+          <td>Drug Test Approval</td>
+          <td>Form<span class="badge badge-sm bg-danger float-end">1</span></td>
+          <td><input type="file" name="" id=""></td>
+          <td><input type="submit" value="Send" class="btn btn-success"></td>
+        </tr>
+        <tr>
+          <td>Sauyo</td>
+          <td>No Cases</td>
+          <td>Form<span class="badge badge-sm bg-warning float-end">0</span></td>
+          <td><input type="file" name="" id=""></td>
+          <td><input type="submit" value="Send" class="btn btn-success"></td>
+        </tr>
+        <tr>
+          <td>Bagbag</td>
+          <td>No Cases</td>
+          <td>Form<span class="badge badge-sm bg-warning float-end">0</span></td>
+          <td><input type="file" name="" id=""></td>
+          <td><input type="submit" value="Send" class="btn btn-success"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
